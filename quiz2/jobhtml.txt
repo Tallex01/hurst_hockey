@@ -1,0 +1,23 @@
+<tr role="row" class="odd">
+            <td headers="landing-page-table-0-0" data-label="image:">
+                <a href="/ooh/architecture-and-engineering/aerospace-engineering-and-operations-technicians.htm" aria-label="Aerospace Engineering and Operations Technologists and Technicians image">
+
+	<img src="/ooh/images/3256.jpg" width="70" height="50" alt="Aerospace engineering and operations technicians">
+
+  </a>
+            </td>
+            <td headers="landing-page-table-0-1" data-label=" " class="sorting_1">
+                <strong style="font-size:1.1em"><a href="/ooh/architecture-and-engineering/aerospace-engineering-and-operations-technicians.htm">    Aerospace Engineering and Operations Technologists and Technicians</a></strong>
+            </td>
+            <td headers="landing-page-table-0-2" data-label="job summary:">
+                
+<p>Aerospace engineering and operations technologists and technicians run and maintain equipment used to develop, test, produce, and sustain aircraft and spacecraft.</p>
+
+            </td>
+            <td style="width: 180px" headers="landing-page-table-0-3" data-label="entry-level education:">
+                                <span title="5.     Associate's degree">    Associate's degree</span>
+            </td>
+            <td style="width: 140px" headers="landing-page-table-0-4" data-label="2024 median pay:">
+                <span title="79830">$79,830</span>
+            </td>
+        </tr>

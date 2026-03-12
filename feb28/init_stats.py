@@ -1,5 +1,5 @@
 from sqlmodel import Session
-from stats_instances import create_stats_instances
+from feb28.stats_instances import create_stats_instances
 from models import engine, Stats
 
 with Session(engine) as session:
