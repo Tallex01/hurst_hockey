@@ -14,3 +14,4 @@ class Architecture(SQLModel, table=True):
 
 engine = create_engine("sqlite:///jobs.db")
 SQLModel.metadata.create_all(engine)
+
