@@ -1,0 +1,31 @@
+from pathlib import Path
+import runpy
+
+base = Path(__file__).resolve().parent
+
+runpy.run_path(str(base / 'init_groups.py'))
+runpy.run_path(str(base / 'init_Architecture_and_Engineering.py'))
+runpy.run_path(str(base / 'init_Arts_and_Design.py'))
+runpy.run_path(str(base / 'init_Building_and_Grounds_Cleaning.py'))
+runpy.run_path(str(base / 'init_Business_and_Financial.py'))
+runpy.run_path(str(base / 'init_Community_and_Social_Service.py'))
+runpy.run_path(str(base / 'init_Computer_and_Information_Technology.py'))
+runpy.run_path(str(base / 'init_Construction_and_Extraction.py'))
+runpy.run_path(str(base / 'init_Educational_Instruction_and_Library.py'))
+runpy.run_path(str(base / 'init_Entertainment_and_Sports.py'))
+runpy.run_path(str(base / 'init_Farming_Fishing_and_Forestry.py'))
+runpy.run_path(str(base / 'init_Food_Preparation_and_Serving.py'))
+runpy.run_path(str(base / 'init_Healthcare.py'))
+runpy.run_path(str(base / 'init_Installation_Maintenance_and_Repair.py'))
+runpy.run_path(str(base / 'init_Legal.py'))
+runpy.run_path(str(base / 'init_Life_Physical_and_Social_Science.py'))
+runpy.run_path(str(base / 'init_Management.py'))
+runpy.run_path(str(base / 'init_Math.py'))
+runpy.run_path(str(base / 'init_Media_and_Communication.py'))
+runpy.run_path(str(base / 'init_Office_and_Administrative_Support.py'))
+runpy.run_path(str(base / 'init_Personal_Care_and_Service.py'))
+runpy.run_path(str(base / 'init_Production.py'))
+runpy.run_path(str(base / 'init_Protective_Service.py'))
+runpy.run_path(str(base / 'init_Sales.py'))
+runpy.run_path(str(base / 'init_Transportation_and_Material_Moving.py'))
+print('Initialized all tables into bls.db')
