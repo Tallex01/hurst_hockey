@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Fun for Kids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Number Fun 🎲</h1>
+            <p class="tagline">Let's explore some awesome numbers!</p>
+        </header>
+
+        <main>
+            <button id="fetchButton" class="fetch-button">
+                ✨ New Problem ✨
+            </button>
+
+            <div class="problem-display">
+                <div class="problem-box">
+                    <p id="number1" class="problem-number">?</p>
+                    <p class="operator">×</p>
+                    <p id="number2" class="problem-number">?</p>
+                    <p class="equals">=</p>
+                    <p id="answerReveal" class="answer-placeholder">?</p>
+                </div>
+            </div>
+
+            <button id="checkButton" class="fetch-button check">
+                ✅ Check Answer
+            </button>
+
+            <div id="resultMessage" class="result-message hidden"></div>
+
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <div class="spinner"></div>
+            </div>
+
+            <div id="errorMessage" class="error-message hidden">
+                <p>Oops! Something went wrong. Try again!</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>🌟 Keep learning and having fun! 🌟</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
