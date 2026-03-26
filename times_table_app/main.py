@@ -16,8 +16,6 @@ async def get_number():
 async def mult(n1: int, n2: int):
     return{"product": n1*n2}
    
-    
-
 
 
 app.mount("/", StaticFiles(directory="static", html=True), name="static")

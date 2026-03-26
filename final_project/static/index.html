@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BLS Job Groups</title>
+	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+	<main class="container">
+		<h1>BLS Job Groups</h1>
+
+		<section class="panel">
+			<label for="group-select">Choose a job group:</label>
+			<select id="group-select">
+				<option value="">Loading groups...</option>
+			</select>
+		</section>
+
+		<section id="group-details" class="panel" hidden>
+			<h2 id="group-name"></h2>
+			<p><strong>Annual Openings:</strong> <span id="group-openings"></span></p>
+			<p><strong>Median Annual Pay:</strong> <span id="group-pay"></span></p>
+		</section>
+
+		<p id="status" class="status"></p>
+	</main>
+
+	<script src="/script.js"></script>
+</body>
+</html>
