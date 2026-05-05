@@ -8,20 +8,30 @@
 </head>
 <body>
 	<main class="container">
-		<h1>BLS Job Groups</h1>
+		<h1>BLS Mini</h1>
 
-		<section class="panel">
-			<label for="group-select">Choose a job group:</label>
-			<select id="group-select">
-				<option value="">Loading groups...</option>
-			</select>
-		</section>
+		<div class="main-layout">
+			<section class="panel group-panel">
+				<h2 class="panel-title">Job Groups</h2>
+				<ul id="group-list" class="group-list">
+					<li>Loading job groups...</li>
+				</ul>
+			</section>
 
-		<section id="group-details" class="panel" hidden>
-			<h2 id="group-name"></h2>
-			<p><strong>Annual Openings:</strong> <span id="group-openings"></span></p>
-			<p><strong>Median Annual Pay:</strong> <span id="group-pay"></span></p>
-		</section>
+			<section id="group-details" class="panel detail-panel" hidden>
+				<h2 id="group-name"></h2>
+				<p><strong>Annual Openings:</strong> <span id="group-openings"></span></p>
+				<p><strong>Median Annual Pay:</strong> <span id="group-pay"></span></p>
+
+				<div id="job-details" class="job-details" hidden>
+					<h3 id="job-name"></h3>
+					<p><strong>Job Group:</strong> <span id="job-group"></span></p>
+					<p><strong>Annual Openings:</strong> <span id="job-openings"></span></p>
+					<p><strong>Median Annual Pay:</strong> <span id="job-pay"></span></p>
+					<p><strong>Entry-Level Education:</strong> <span id="job-education"></span></p>
+				</div>
+			</section>
+		</div>
 
 		<p id="status" class="status"></p>
 	</main>

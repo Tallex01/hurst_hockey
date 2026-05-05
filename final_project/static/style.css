@@ -18,13 +18,17 @@ body {
 }
 
 .container {
-	max-width: 700px;
+	max-width: 1100px;
 	margin: 3rem auto;
 	padding: 0 1rem;
 }
 
 h1 {
 	margin-bottom: 1.25rem;
+}
+
+.panel-title {
+	margin: 0 0 0.8rem 0;
 }
 
 .panel {
@@ -35,18 +39,104 @@ h1 {
 	margin-bottom: 1rem;
 }
 
+.main-layout {
+	display: grid;
+	grid-template-columns: 1.3fr 1fr;
+	gap: 1rem;
+	align-items: start;
+}
+
+.group-panel,
+.detail-panel {
+	margin-bottom: 0;
+}
+
+.detail-panel {
+	position: sticky;
+	top: 1rem;
+}
+
 label {
 	display: block;
 	margin-bottom: 0.5rem;
 	font-weight: 600;
 }
 
-select {
+.group-list,
+.jobs-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.group-item {
+	padding: 0;
+	margin-bottom: 0.5rem;
+}
+
+.group-trigger {
 	width: 100%;
-	padding: 0.6rem 0.75rem;
+	text-align: left;
+	padding: 0.65rem 0.75rem;
 	border: 1px solid var(--border);
 	border-radius: 8px;
-	font-size: 1rem;
+	background: #f8fbff;
+	color: var(--text);
+	font-size: 0.98rem;
+	cursor: pointer;
+}
+
+.group-trigger:hover {
+	background: #edf5ff;
+}
+
+.jobs-container {
+	margin-top: 0.55rem;
+	padding: 0.65rem;
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	background: #ffffff;
+}
+
+.jobs-list li {
+	padding: 0.25rem 0.1rem;
+	border-bottom: 1px solid #e8eff6;
+}
+
+.jobs-list li:last-child {
+	border-bottom: none;
+}
+
+.job-trigger {
+	width: 100%;
+	text-align: left;
+	padding: 0.4rem 0.45rem;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	background: #f7fbff;
+	color: var(--text);
+	font-size: 0.95rem;
+	cursor: pointer;
+}
+
+.job-trigger:hover {
+	background: #eaf4ff;
+}
+
+.job-trigger.is-selected {
+	background: #dff0ff;
+	border-color: #9ac5ea;
+}
+
+.job-details {
+	margin-top: 1rem;
+	padding-top: 0.8rem;
+	border-top: 1px solid #d7e4ef;
+}
+
+#job-name {
+	margin: 0 0 0.6rem 0;
+	color: #0c5a83;
 }
 
 #group-name {
@@ -57,4 +147,15 @@ select {
 .status {
 	min-height: 1.2rem;
 	font-size: 0.95rem;
+	margin-top: 1rem;
+}
+
+@media (max-width: 860px) {
+	.main-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.detail-panel {
+		position: static;
+	}
 }
